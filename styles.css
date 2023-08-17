@@ -1,0 +1,320 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Quicksand', sans-serif;
+ font-family: 'Roboto', sans-serif;
+}
+
+html {
+ scroll-behavior: smooth;
+}
+
+.container{
+ padding: 0 20px;
+ max-width: 1220px;
+ margin: auto;
+}
+
+.header{
+ background-color: transparent;
+ position: fixed;
+ width: 100%;
+ transition: background-color 0.3s ease-in-out;
+}
+
+.nav{
+ max-width: 1220px;
+ padding: 20px 0px;
+ margin: auto;
+ display: flex;
+ justify-content: space-between;
+}
+
+.nav-bar{
+ list-style: none;
+ display: flex;
+}
+
+.nav-item{
+ margin: 0 10px;
+}
+.nav-item a{
+ text-decoration: none;
+ color: #000;
+ font-weight: 700;
+ letter-spacing: 0.5px;
+}
+
+.scrolled{
+ background-color: #000080;
+}
+.scrolled .nav-item a{
+ color: white;
+}
+.scrolled .header-logo-desktop{
+ color: white;
+}
+
+.main-name{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 100px 0 90px;
+ scroll-margin-top: 70px;
+}
+.main-name h1{
+ white-space: nowrap;
+ font-size: 30px;
+}
+
+.main-name-text{
+ text-align: center;
+}
+
+.main-job{
+ margin-top: 10px;
+ color: #4e4e4e;
+}
+
+.about{
+ scroll-margin-top: 70px;
+}
+
+.about-info{
+
+}
+.about-info h2{
+ margin-bottom: 10px;
+}
+.about-info p{
+ line-height: 22px;
+}
+
+.experience{
+}
+.experience-title{
+ font-size: 24px;
+ font-weight: 700;
+}
+.experience-item{
+ padding-top: 25px;
+}
+
+.experience-head{
+ display: flex;
+ align-items: center;
+}
+
+.experience-head .experience-cont-title{
+ padding-left: 10px;
+}
+.experience-head .experience-title{
+ font-size: 18px;
+}
+.experience-head .experience-subtitle{
+ font-size: 14px;
+ color: grey;
+}
+.experience-head:before {
+ content: "";
+ display: inline-block;
+ background-color: #000080;
+ border-radius: 50%;
+ width: 22px;
+ height: 22px;
+ margin-bottom: 3px;
+ margin-right: 5px;
+ position: relative;
+ top: -5px;
+}
+
+.experience-info{
+ position: relative;
+}
+
+.experience-line{
+ height: calc(100% + 60px);
+ border: 1px solid #000080;
+ position: absolute;
+ left: 10px;
+ top: -24px;
+ z-index: -1;
+}
+.experience-item:last-of-type .experience-line{
+ height: 40px;
+}
+
+.experience-p{
+ padding-left: 50px;
+ padding-top: 15px;
+}
+
+.technologies{
+}
+
+.footer{
+ padding: 0px 50px 30px 50px;
+}
+
+.footer-info{
+ margin-top: 40px;
+ text-align: center;
+ font-weight: 700;
+}
+
+.footer-redes{
+ display: flex;
+}
+
+.header.desktop{
+}
+
+.header-mobile{
+ position: fixed;
+ width: 100%;
+ height: 60px;
+ transition: background-color 0.3s ease-in-out;
+ transition: top 0.3s ease-in-out;
+ z-index: 99;
+}
+
+.header-menu{
+ position: absolute;
+ top: 12px;
+ left: 5px;
+}
+.header-menu svg{
+ display: block;
+ width: 32px;
+ height: 32px;
+}
+
+.header-logo{
+ text-decoration: none;
+ color: black;
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ padding: 18px 0;
+ font-weight: 700;
+ font-size: 18px;
+}
+
+.header-logo-desktop{
+ text-decoration: none;
+ color: black;
+ font-weight: 700;
+ font-size: 18px;
+}
+
+.menu-lateral{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ transition: all 0.5s ease;
+ left: -100%;
+ overflow: hidden;
+}
+
+.menu-lateral-background{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background: rgba(0,0,0,.5);
+ z-index: 9;
+}
+
+.menu-lateral-container{
+ z-index: 99;
+ position: absolute;
+ width: 100%;
+ max-width: 400px;
+ height: 100%;
+ background: black;
+ padding-top: 75px;
+}
+.menu-lateral-item{
+ padding: 20px;
+ text-align: center;
+ color: white;
+}
+
+.menu-lateral-exit{
+ width: 24px;
+ height: 24px;
+ display: block;
+ position: absolute;
+ top: 20px;
+ right: 20px;
+}
+
+.tech-slider .slick-slide{
+ text-align: center;
+}
+.tech-slider .slick-slide svg{
+ width: 64px;
+ height: 64px;
+}
+.tech-slider .slick-slide svg{
+ fill: #000080;
+}
+.tech-slider .slick-slide svg.icon{
+ fill: white;
+}
+
+
+.desktop{
+ display: none;
+}
+
+.division-section{
+ width: 90%;
+ border: 1px solid #dfdfdf;
+ margin: 50px auto;
+}
+
+.footer-redes-item svg{
+ fill: #4e4e4e;
+}
+
+@media (min-width: 1024px){
+ .desktop{
+  display: block;
+ }
+ .header-mobile{
+  display: none;
+ }
+ .about{
+  display: flex;
+ }
+ .header{
+  
+ }
+
+ .main-name{
+  padding: 200px 0 ;
+  scroll-margin-top: 70px;
+ }
+ 
+
+ .experience-line{
+  top: -17px;
+ }
+
+ .about-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ .tech-slider .slick-slide svg{
+  width: 50px;
+  height: 50px;
+ }
+
+ .footer-redes-item svg{
+  width: 45px;
+  height: 45px;
+ }
+}
