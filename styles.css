@@ -1,3 +1,7 @@
+:root{
+ --color-brand: #000080;
+}
+
 *{
  margin: 0;
  padding: 0;
@@ -21,6 +25,7 @@ html {
  position: fixed;
  width: 100%;
  transition: background-color 0.3s ease-in-out;
+ z-index: 99;
 }
 
 .nav{
@@ -47,7 +52,7 @@ html {
 }
 
 .scrolled{
- background-color: #000080;
+ background-color: var(--color-brand);
 }
 .scrolled .nav-item a{
  color: white;
@@ -119,7 +124,7 @@ html {
 .experience-head:before {
  content: "";
  display: inline-block;
- background-color: #000080;
+ background-color: var(--color-brand);
  border-radius: 50%;
  width: 22px;
  height: 22px;
@@ -135,7 +140,7 @@ html {
 
 .experience-line{
  height: calc(100% + 60px);
- border: 1px solid #000080;
+ border: 1px solid var(--color-brand);
  position: absolute;
  left: 10px;
  top: -24px;
@@ -257,7 +262,7 @@ html {
  height: 64px;
 }
 .tech-slider .slick-slide svg{
- fill: #000080;
+ fill: var(--color-brand);
 }
 .tech-slider .slick-slide svg.icon{
  fill: white;
@@ -316,5 +321,100 @@ html {
  .footer-redes-item svg{
   width: 45px;
   height: 45px;
+ }
+}
+
+/* FORM CSS */
+
+.container-form{
+ max-width: 600px;
+}
+
+.form-mail{
+ border: 2px solid var(--color-brand);
+ padding: 20px 10px;
+ border-radius: 8px;
+
+ box-shadow: 1px -1px 20px -10px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px -1px 20px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px -1px 20px -10px rgba(0,0,0,0.75);
+}
+
+.form-mail-title{
+ margin-bottom: 10px;
+ text-align: center;
+}
+.form-mail-title-text{
+ font-size: 24px;
+ font-weight: 700;
+ display: block;
+}
+
+.form-mail input{
+ margin-bottom: 10px;
+ padding: 8px 5px;
+ width: 100%;
+}
+.form-mail-contador{
+ margin-bottom: 10px;
+ text-align: end;
+}
+.form-contador-text{
+ font-size: 14px;
+ opacity: 0.8;
+}
+.form-mail textarea{
+ padding: 8px 5px;
+ width: 100%;
+}
+.form-mail input, .form-mail textarea{
+ outline: none;
+}
+
+.form-mail-send{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+}
+
+.form-mail-send button{
+ padding: 8px 24px;
+ border: none;
+ background: var(--color-brand);
+ color: white;
+ font-size: 14px;
+ font-weight: 700;
+ letter-spacing: 1px;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.form-msj-error{
+ font-size: 14px;
+ font-weight: 700;
+ color: red;
+ margin-top: 10px;
+}
+.form-msj-error{
+ font-size: 14px;
+ font-weight: 700;
+ color: green;
+ margin-top: 10px;
+}
+
+@media (min-width:1024px){
+ .form-mail{
+  padding: 25px 15px;
+ }
+
+ .form-mail-title{
+  margin-bottom: 20px;
+ }
+ .form-mail input{
+  margin-bottom: 20px;
+ }
+ .form-mail-contador{
+  margin-bottom: 20px;
  }
 }
