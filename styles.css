@@ -255,11 +255,22 @@ html {
 }
 
 .tech-slider .slick-slide{
- text-align: center;
+    text-align: center;
+}
+.tech-slider .tech-slider-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tech-slider .tech-slider-item span{
+    color: var(--color-brand);
+    font-weight: 700;
 }
 .tech-slider .slick-slide svg{
  width: 64px;
  height: 64px;
+ margin-bottom: 10px;
 }
 .tech-slider .slick-slide svg{
  fill: var(--color-brand);
